@@ -404,6 +404,12 @@ section {
     cursor: pointer;
 }
 
+@media (min-width: 700px) {
+    #home{
+        min-height: 120vh;
+    }
+}
+
 @media (min-width: 800px) {
     .portfolios {
         grid-template-columns: repeat(3, 1fr);
