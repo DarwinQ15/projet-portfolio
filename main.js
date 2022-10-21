@@ -78,3 +78,9 @@ check.addEventListener('click', idioma);
 //         location.href= "../english/indexEn.html";
 //     }
 // }
+
+const title = document.querySelector('.homeSubtitle');
+
+
+
+

@@ -24,8 +24,11 @@ body.darkTheme {
 body {
     background-color: var(--color-bg);
     color: var(--color-font);
-
     transition: background-color 0.5s, color 0.5s;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -ms-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
 }
 
 ul {
@@ -129,7 +132,7 @@ html {
     max-width: 1024px;
     margin: 0 auto;
 
-    padding: 0 .2rem;
+    padding: 1rem;
 }
 
 .navbar {
@@ -206,27 +209,105 @@ section {
     gap: 1rem;
 }
 
-#home{
-    background-image: url(./assets/img/as.jpg);
-    background-repeat: no-repeat;
-    align-items: center;
-    text-align: center;
+#about{
+    min-height: 80vh;
+}
+
+.name{ 
+    color: var(--color-principal);
+}
+
+#hability{
+    min-height: 70vh;
 }
 
 .home__title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .home__title span {
     font-size: 2.2rem;
     color: var(--color-principal);
 }
-.about__img {
-    width: 50%;
+
+.home__image{
+    width: 300px;
+    height: 300px;
+    border: 7px solid rgba(11, 10, 10, 0.3);
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 3rem;
 }
+
+.home__image img{
+    width: 99.999999%;
+    height: 99.99999%;
+    transition: all 0.8s ease-out;
+}
+
+.info__home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.link__buttom{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    background-color: var(--color-principal);
+    font-weight: 500;
+}
+
+.hability__scrool{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hability__scrool::-webkit-scrollbar {
+    background:#8b7bef11;
+    height: 7px;
+}
+.hability__scrool::-webkit-scrollbar-thumb {
+    background: #5c3bef38;
+    border-radius: 30px;
+}
+
+.bxl-html5{
+    font-size: 10rem;
+    color:  rgb(255, 95, 56);
+}
+
+.bxl-css3{
+    font-size: 10rem;
+    color: rgb(0, 102, 255);;
+}
+
+.bxl-javascript{
+    font-size: 10rem;
+    color: rgb(255, 174, 0);
+}
+
+.bxl-react{
+    font-size: 10rem;
+    color: rgb(38, 174, 253);
+}
+
+.bxl-git{
+    font-size: 10rem;
+    color: rgb(255, 95, 56);
+}
+
+.bxl-github{
+    font-size: 10rem;
+    color: rgb(36, 36, 36);
+}
+
 
 .portfolios {
     display: grid;
@@ -336,6 +417,11 @@ section {
 
     .form {
         width: 80%;
+    }
+
+    .hability__scrool{
+        display: flex;
+        justify-content: center;
     }
 }
 
